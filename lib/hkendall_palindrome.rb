@@ -2,7 +2,7 @@
 
 require_relative "hkendall_palindrome/version"
 
-class String
+module HkendallPalindrome
 
   # Returns true for a palindrome, false otherwise.
   def palindrome?
@@ -15,6 +15,14 @@ class String
 
     # Returns content for palindrome testing.
     def processed_content
-      scan(/[a-z]/i).join.downcase
+      to_s.scan(/[a-z0-9]/i).join.downcase
     end
+end
+
+class String
+  include HkendallPalindrome
+end
+
+class Integer
+  include HkendallPalindrome
 end
