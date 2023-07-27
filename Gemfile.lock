@@ -18,6 +18,7 @@ GEM
     ruby-progressbar (1.13.0)
 
 PLATFORMS
+  arm64-darwin-21
   x64-mingw-ucrt
 
 DEPENDENCIES
