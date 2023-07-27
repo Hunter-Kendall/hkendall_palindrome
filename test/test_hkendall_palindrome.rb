@@ -24,4 +24,7 @@ class TestHkendallPalindrome < Minitest::Test
   def test_integer_palindrome
     assert 12321.palindrome?
   end
+  def test_____non_palindrome
+    refute "   ".palindrome?
+  end
 end
